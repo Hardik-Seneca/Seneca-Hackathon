@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <div id="footer">
       <Container>
-        <h2>Need Help?</h2>
+        <h2 className="mb-4">Need Help?</h2>
         <Row>
           <Col md className="mb-4">
             <h3>Email us</h3>

@@ -1,3 +1,7 @@
+:root {
+  --primary-color: #da291c;
+}
+
 html,
 body {
   margin: 0;
@@ -26,7 +30,7 @@ p {
 }
 
 .navBarTop {
-  background-color: red;
+  background-color: var(--primary-color);
   width: 100%;
   right: 0;
   justify-content: right;
@@ -45,18 +49,54 @@ p {
 #footer {
   width: 100%;
   padding: 1.25% 0;
-  background-color: red;
+  background-color: var(--primary-color);
   color: white;
   justify-content: center;
   position: fixed;
   bottom: 0;
 }
 
-@media screen and (max-width: 750px) {
+/* @media screen and (max-width: 750px) {
   .page-content {
     margin-bottom: 7em;
   }
+
   #footer {
     position: relative;
   }
+} */
+
+.text-container {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 40%;
+}
+
+.title {
+  font-weight: 900;
+  color: transparent;
+  font-size: 120px;
+  background: url("../../public/rainbow-nebula.jpg") repeat;
+  background-position: 40% 50%;
+  -webkit-background-clip: text;
+  position: relative;
+  text-align: center;
+  line-height: 90px;
+  letter-spacing: -8px;
+}
+
+.subtitle {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.redirection{
+  text-align: center;
+}
+
+.redirection a{
+  color: var(--primary-color);
 }
