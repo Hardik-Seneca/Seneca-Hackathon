@@ -99,4 +99,5 @@ p {
 
 .redirection a{
   color: var(--primary-color);
+  text-decoration: none;
 }
