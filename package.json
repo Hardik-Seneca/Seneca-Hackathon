@@ -1,15 +1,15 @@
 {
-  "name": "seneca-hackathon-coming-soon-page",
   "homepage": "https://hardik-seneca.github.io",
+  "name": "seneca-hackathon-coming-soon-page",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "deploy": "npm run build && gh-pages -d build",
-    "build": "react-scripts build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
